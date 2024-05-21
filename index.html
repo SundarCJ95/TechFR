@@ -59,6 +59,17 @@ chat='true'>
         function nextPage() {
             document.getElementById('page1').classList.add('hidden');
             document.getElementById('page2').classList.remove('hidden');
+            var new_contact = {
+	"First name": document.getElementById("firstName").value, //Replace with first name of the user
+	"Last name": document.getElementById("lastName").value, //Replace with last name of the user
+	"Email": document.getElementById("email").value, //Replace with email of the user
+	"company": {
+		"Name": document.getElementById("firstName").value, //Replace with company name
+		"Website": "www.example.com" //Replace with website of company
+	}
+};
+var identifier = document.getElementById("email").value;
+fwcrm.identify(identifier, new_contact);
         }
 
         function prevPage() {
