@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script
+<!--     <script
 src='//in.fw-cdn.com/31471189/725008.js'
 chat='true'>
-</script>
+</script> -->
+
+  <script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='//d952cmcgwqsjf.cloudfront.net/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init("https://ramansundar869.myfreshworks.com/crm/sales","37823a00eccdfca745c41642cdd601b4c92e3b8c59ed97faa6888d4ad915475c",false);}})();</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Page Form</title>
@@ -70,7 +73,7 @@ chat='true'>
 	}
 };
 var identifier = document.getElementById("mobile").value;
-fwcrm.identify(identifier, new_contact);
+freshsales.identify(identifier, new_contact);
         }
 
         function prevPage() {
