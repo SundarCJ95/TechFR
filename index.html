@@ -63,12 +63,13 @@ chat='true'>
 	"First name": document.getElementById("firstName").value, //Replace with first name of the user
 	"Last name": document.getElementById("lastName").value, //Replace with last name of the user
 	"Email": document.getElementById("email").value, //Replace with email of the user
+	"mobile": document.getElementById("mobile").value, //Replace with mobile of the user
 	"company": {
 		"Name": document.getElementById("firstName").value, //Replace with company name
 		"Website": "www.example.com" //Replace with website of company
 	}
 };
-var identifier = document.getElementById("email").value;
+var identifier = document.getElementById("mobile").value;
 fwcrm.identify(identifier, new_contact);
         }
 
